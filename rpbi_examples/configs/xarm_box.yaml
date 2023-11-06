@@ -1,0 +1,19 @@
+name: "box"
+
+loadURDF:
+  fileName: "{rpbi_examples}/robots/box.urdf"
+  useFixedBase: 1
+  basePosition: [0.325,0,0]
+
+
+
+
+# changeDynamics:
+#   lateralFriction: 1.0
+#   spinningFriction: 0.0
+#   rollingFriction: 0.0
+#   restitution: 0.0
+#   linearDamping: 0.04
+#   angularDamping: 0.04
+#   contactStiffness: 2000.0
+#   contactDamping: 0.7

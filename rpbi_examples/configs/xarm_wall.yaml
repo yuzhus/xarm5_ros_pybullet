@@ -1,0 +1,20 @@
+name: "wall"
+
+loadURDF:
+  fileName: "{rpbi_examples}/robots/wall.urdf"
+  useFixedBase: 1
+  basePosition: [-0.095,0.6,0.22]
+  baseOrientation: [6.123233995736766e-17, -1.0, -6.123233995736766e-17, 3.749399456654644e-33]
+
+
+
+
+# changeDynamics:
+#   lateralFriction: 1.0
+#   spinningFriction: 0.0
+#   rollingFriction: 0.0
+#   restitution: 0.0
+#   linearDamping: 0.04
+#   angularDamping: 0.04
+#   contactStiffness: 2000.0
+#   contactDamping: 0.7

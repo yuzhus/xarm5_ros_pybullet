@@ -1,0 +1,63 @@
+#
+# Basic example
+#
+
+
+#
+# Pybullet instance
+#
+connect:
+  connection_mode: 'GUI'
+
+setGravity:
+  gravX: 0.0
+  gravY: 0.0
+  gravZ: -9.81
+
+timeStep: 0.01
+start_pybullet_after_initialization: true
+status_hz: 50
+
+
+#
+# Pybullet visualizer
+#
+configureDebugVisualizer:
+  enable: 0
+  flag: 'COV_ENABLE_GUI'
+
+resetDebugVisualizerCamera:
+  cameraDistance: 2.0
+  cameraYaw: 45.0
+  cameraPitch: -45.0
+  cameraTargetPosition: [0.0, 0.0, 0.0]
+
+
+#
+# Sensors
+#
+
+rgbd_sensor:
+  name: 'rgbd_sensor'
+  hz: 30
+  intrinsics:
+    width: 640
+    height: 480
+    fov: 40
+    range: [0.01, 10000]
+  object_tf:
+    tf_id: 'rpbi/camera'
+
+
+#
+# Pybullet objects
+#
+urdfs:
+  - "{rpbi_examples}/configs/xarm_table1.yaml"
+  - "{rpbi_examples}/configs/xarm_table2.yaml"
+  - "{rpbi_examples}/configs/xarm_wall.yaml"
+  - "{rpbi_examples}/configs/xarm_box.yaml"
+robots:
+  - "{rpbi_examples}/configs/pybullet_xarm_digital_twin_example/xarm.yaml"
+# collision_objects:
+#   - "{rpbi_examples}/configs/xarm_floor.yaml"
